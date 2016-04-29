@@ -1,2 +1,2 @@
 # emagazine
-for those who love reading.
+for those who love reading :smile:
