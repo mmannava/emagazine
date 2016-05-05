@@ -41,8 +41,10 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-primary btn-lg" />
+                            <asp:Button runat="server" OnClick="myAccount_Click" Text="Log in" CssClass="btn btn-primary btn-lg" />
+                            
                         </div>
+
                     </div>
                 </div>
                 <p>
@@ -55,11 +57,12 @@
                 </p>
             </section>
         </div>
-
         <div class="col-md-4">
             <section id="socialLoginForm">
                 <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
             </section>
         </div>
+        
+       
     </div>
 </asp:Content>

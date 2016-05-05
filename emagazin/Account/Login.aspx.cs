@@ -23,6 +23,8 @@ namespace emagazin.Account
             }
         }
 
+        
+
         protected void LogIn(object sender, EventArgs e)
         {
             if (IsValid)
@@ -42,28 +44,37 @@ namespace emagazin.Account
                 }
 
 
-               /** switch (result)
-                {
-                    case SignInStatus.Success:
-                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
-                        break;
-                    case SignInStatus.LockedOut:
-                        Response.Redirect("/Account/Lockout");
-                        break;
-                    case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
-                                                        Request.QueryString["ReturnUrl"],
-                                                        RememberMe.Checked),
-                                          true);
-                        break;
-                    case SignInStatus.Failure:
-                    default:
-                        FailureText.Text = "Invalid login attempt";
-                        ErrorMessage.Visible = true;
-                        break;
-                }
-    **/
+                /** switch (result)
+                 {
+                     case SignInStatus.Success:
+                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                         break;
+                     case SignInStatus.LockedOut:
+                         Response.Redirect("/Account/Lockout");
+                         break;
+                     case SignInStatus.RequiresVerification:
+                         Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
+                                                         Request.QueryString["ReturnUrl"],
+                                                         RememberMe.Checked),
+                                           true);
+                         break;
+                     case SignInStatus.Failure:
+                     default:
+                         FailureText.Text = "Invalid login attempt";
+                         ErrorMessage.Visible = true;
+                         break;
+                 }
+     **/
+               
             }
         }
+
+        protected void myAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/MyAccount.aspx");
+        }
+
+       
+        
     }
 }
