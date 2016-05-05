@@ -212,7 +212,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MyAccount.aspx" />
+    <Content Include="RegistrationSuccess.aspx" />
     <None Include="Properties\PublishProfiles\emagazin.pubxml" />
+    <None Include="Properties\PublishProfiles\simplemagazine %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\simplemagazine.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
@@ -429,6 +431,13 @@
     </Compile>
     <Compile Include="MyAccount.aspx.designer.cs">
       <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSuccess.aspx.cs">
+      <DependentUpon>RegistrationSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationSuccess.aspx.designer.cs">
+      <DependentUpon>RegistrationSuccess.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

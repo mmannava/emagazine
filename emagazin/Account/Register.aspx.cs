@@ -40,8 +40,11 @@ namespace emagazin.Account
 
             }
             
-            
-            
+        }
+
+        protected void Register_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/RegistrationSuccess.aspx");
         }
     }
 }

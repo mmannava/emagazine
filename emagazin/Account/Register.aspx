@@ -38,7 +38,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-primary btn-lg" />
+                <asp:Button runat="server" OnClick="Register_Click" Text="Register" CssClass="btn btn-primary btn-lg" />
             </div>
         </div>
     </div>
